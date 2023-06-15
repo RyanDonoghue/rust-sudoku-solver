@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message SudokuRow {
+  repeated int32 row = 1;
+}
+
+message SudokuBoard {
+  repeated SudokuRow rows = 1;
+}

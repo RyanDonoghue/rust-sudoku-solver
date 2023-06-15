@@ -52,3 +52,4 @@ const PRINT_DELAY: u64 = 50;
 - Backtracking probably the fastest way of solving a sudoku puzzle, however it still has a large time complexity (O(K ^ N), and would usually have the potential for high space complexity. However as this solution is dealing with references passed recursively that should not be an issue.
 - While initial implmentations of the solver used u8 values (unsigned 8-bit integers)
 - I've added a duration output for only the solving algorithm, purely so I could compare to similar solutions in other languages
+- There's a distinct lack of regression tests (or any tests for that matter), adequate error handling and logging. This was a conscious decision as this project was created during a hackathon and time did not allow

@@ -53,3 +53,4 @@ const PRINT_DELAY: u64 = 50;
 - While initial implmentations of the solver used u8 values (unsigned 8-bit integers)
 - I've added a duration output for only the solving algorithm, purely so I could compare to similar solutions in other languages
 - There's a distinct lack of regression tests (or any tests for that matter), adequate error handling and logging. This was a conscious decision as this project was created during a hackathon and time did not allow
+- In terms of the space complexity of the sudoku boards, this could be improved by using an unsigned 8-bit integer rather than the current signed 32-bit integer. However, signed 32-bit integers worked nicely with the values read from the protobuf messages with a little to no performance difference.
